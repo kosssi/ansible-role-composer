@@ -1,0 +1,9 @@
+- name: Download and install Composer into the current directory.
+  shell:
+    php -r "readfile('https://getcomposer.org/installer');" | php
+    creates={{ composer_path }}
+
+- name: Move Composer into bin directory.
+  shell:
+    mv composer.phar {{ composer_path }}
+    creates={{ composer_path }}

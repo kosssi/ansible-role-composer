@@ -1,0 +1,4 @@
+- include: install.yml
+- include: test.yml
+- include: update.yml
+  when: composer_update == true
