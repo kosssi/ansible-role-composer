@@ -1,3 +1,5 @@
+---
+
 - name: Get date for composer update
   shell:
     date --date="{{ composer_update_day }} days ago" +"%s"

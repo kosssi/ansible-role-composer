@@ -1,3 +1,5 @@
+---
+
 - name: Get stat of composer file
   stat:
     path="{{ composer_path }}"
