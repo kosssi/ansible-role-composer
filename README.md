@@ -22,6 +22,13 @@ commands simply with `composer` instead of the full path.
       roles:
         - { role: kosssi.composer }
 
+## Vagrant
+
+If you have vagrant, you can test this role:
+
+    cd tests
+    vagrant up
+
 ## License
 
 MIT
