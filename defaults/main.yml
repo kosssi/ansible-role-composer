@@ -3,4 +3,4 @@
 composer_path: /usr/local/bin/composer
 composer_update: true
 composer_update_day: 20
-composer_php_bin: php
+proxy_env: {}

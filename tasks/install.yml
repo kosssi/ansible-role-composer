@@ -2,8 +2,9 @@
 
 - name: Download and install Composer into the current directory.
   shell:
-    echo; {{ composer_php_bin }} -r "readfile('https://getcomposer.org/installer');" | {{ composer_php_bin }}
+    php -r "readfile('https://getcomposer.org/installer');" | php
     creates={{ composer_path }}
+  environment: proxy_env
 
 - name: Move Composer into bin directory.
   shell:

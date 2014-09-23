@@ -13,14 +13,15 @@ Installs Composer, the PHP Dependency Manager.
     composer_path: /usr/local/bin/composer
     composer_update: true
     composer_update_day: 20
-    composer_php_bin: php
+    env_proxy: {}
 
 The path where composer will be installed and available to your system. Should be in your user's `$PATH` so you can run
 commands simply with `composer` instead of the full path.
 
-You can specify where is php with `composer_php_bin` variable. For exemple :
+You can specify where is php with `env_proxy` variable. For exemple :
 
-    composer_php_bin: /usr/local/zend/bin/php
+    env_proxy:
+      PATH: "/usr/local/zend/bin"
 
 ## Example Playbook
 
