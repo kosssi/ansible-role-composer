@@ -18,10 +18,17 @@ Installs Composer, the PHP Dependency Manager.
 The path where composer will be installed and available to your system. Should be in your user's `$PATH` so you can run
 commands simply with `composer` instead of the full path.
 
-You can specify where is php with `env_proxy` variable. For exemple :
+You can specify where is php with `env_proxy` variable. For example :
 
     env_proxy:
       PATH: "/usr/local/zend/bin"
+
+You can also setup a global composer directory and make the bin directory available in the `$PATH` automatically by:
+ 
+    composer_home_path: /var/data/composer
+    composer_path_env: true
+    composer_global_packages:
+      phpunit/phpunit: "@stable"
 
 ## Example Playbook
 
