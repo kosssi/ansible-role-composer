@@ -26,6 +26,8 @@ You can specify where is php with `env_proxy` variable. For example :
 You can also setup a global composer directory and make the bin directory available in the `$PATH` automatically by:
  
     composer_home_path: /var/data/composer
+    composer_home_owner: kosssi
+    composer_home_group: kosssi
     composer_path_env: true
     composer_global_packages:
       phpunit/phpunit: "@stable"
@@ -42,6 +44,11 @@ If you have vagrant, you can test this role:
     cd tests
     vagrant up
 
+## Special thanks to contributors
+
+* [jnakatsui](https://github.com/jnakatsui)
+* [yoshz](https://github.com/yoshz)
+
 ## License
 
-MIT
+Licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
