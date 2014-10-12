@@ -25,8 +25,10 @@ You can specify where is php with `env_proxy` variable. For example :
 
 You can also setup a global composer directory and make the bin directory available in the `$PATH` automatically by:
  
-    composer_home_path: /var/data/composer
     composer_path_env: true
+    composer_home_path: /opt/composer
+    composer_home_owner: root
+    composer_home_group: root
     composer_global_packages:
       phpunit/phpunit: "@stable"
 
