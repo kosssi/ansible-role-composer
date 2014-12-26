@@ -12,6 +12,15 @@ galaxy_info:
   - name: Debian
     versions:
     - all
+  - name: Fedora
+    versions:
+    - all
+  - name: CentOS
+    versions:
+    - all
+  - name: Redhat
+    versions:
+    - all
   categories:
     - packaging
     - web
