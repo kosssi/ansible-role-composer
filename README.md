@@ -48,6 +48,7 @@ If you have vagrant, you can test this role:
 
 * [jnakatsui](https://github.com/jnakatsui)
 * [yoshz](https://github.com/yoshz)
+* [jrobeson](https://github.com/jrobeson)
 
 ## License
 
