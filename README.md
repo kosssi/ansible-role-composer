@@ -32,6 +32,18 @@ You can also setup a global composer directory and make the bin directory availa
     composer_global_packages:
       phpunit/phpunit: "@stable"
 
+If your project use a lot of libraries from github, you may see next message during `composer install`:
+
+    Could not fetch `...`, enter your GitHub credentials to go over the API rate limit
+    A token will be created and stored in "~/.composer/auth.json", your password will never be stored
+    To revoke access to this token you can visit https://github.com/settings/applications
+
+So your `composer install` can get stuck.
+
+To prevent that, you must configure github oauth token to go over the API rate limit. Visit https://github.com/settings/applications and generate personal access token and assign it to `composer_github_oauth` variable.
+
+    composer_github_oauth: f03401aae1e276abb073f987c08a32410f462e73
+
 ## Example Playbook
 
       roles:

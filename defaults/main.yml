@@ -9,3 +9,7 @@ composer_home_owner: root
 composer_home_group: root
 composer_global_packages: {}
 proxy_env: {}
+
+# Visit https://github.com/settings/applications 
+# and generate personal access token
+composer_github_oauth: false
