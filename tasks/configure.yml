@@ -1,8 +1,7 @@
 ---
 
 - name: Create composer home path
-  file: path={{ composer_home_path }} state=directory owner={{ composer_home_owner }} group={{ composer_home_group }}
-  when: composer_home_path is defined
+  file: path={{ composer_home_path|default('~/.composer') }} state=directory owner={{ composer_home_owner }} group={{ composer_home_group }}
 
 - name: Configure composer home path
   copy: dest=/etc/profile.d/composer-home.sh mode=0755
