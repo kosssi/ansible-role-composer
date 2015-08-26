@@ -1,5 +1,6 @@
 # ansible-role-composer
 
+[![License](https://img.shields.io/badge/License-MIT%20License-blue.svg)](https://github.com/kosssi/ansible-role-composer/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/kosssi/ansible-role-composer.svg?branch=master)](https://travis-ci.org/kosssi/ansible-role-composer)
 
 Installs Composer, the PHP Dependency Manager.
@@ -61,7 +62,3 @@ If you have vagrant, you can test this role:
 * [jnakatsui](https://github.com/jnakatsui)
 * [yoshz](https://github.com/yoshz)
 * [jrobeson](https://github.com/jrobeson)
-
-## License
-
-Licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
