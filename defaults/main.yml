@@ -12,3 +12,4 @@ composer_global_packages: {}
 # Visit https://github.com/settings/applications 
 # and generate personal access token
 composer_github_oauth: false
+composer_http_basic: false

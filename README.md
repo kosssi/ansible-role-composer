@@ -23,6 +23,10 @@ You can also setup a global composer directory and make the bin directory availa
     composer_global_packages:
       phpunit/phpunit: "@stable"
 
+## Auth.json
+
+### Github OAuth token
+
 If your project use a lot of libraries from github, you may see next message during `composer install`:
 
     Could not fetch `...`, enter your GitHub credentials to go over the API rate limit
@@ -34,6 +38,17 @@ So your `composer install` can get stuck.
 To prevent that, you must configure github oauth token to go over the API rate limit. Visit https://github.com/settings/applications and generate personal access token and assign it to `composer_github_oauth` variable.
 
     composer_github_oauth: f03401aae1e276abb073f987c08a32410f462e73
+
+### HTTP Basic auth
+
+You can provide HTTP Basic auth credentials to any repository like this:
+
+```
+composer_http_basic:
+    repo.magento.com:
+        username: 52fe41da9d8caa70538244c10f367d0a
+        password: 238fe32d374a2573c4527bd45a7e6f54
+```
 
 ## Example Playbook
 

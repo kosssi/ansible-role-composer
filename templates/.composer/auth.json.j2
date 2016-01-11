@@ -1,5 +1,19 @@
 {
-    "github-oauth": {
-        "github.com": "{{ composer_github_oauth }}"
+    {% if composer_http_basic %}
+    "http-basic": {
+        {% for repository,credentials in composer_http_basic.iteritems() %}
+        {% if loop.index0 %},{% endif %}
+        "{{ repository }}": {
+            "username": "{{ credentials.username }}",
+            "password": "{{ credentials.password }}"
+        }
+        {% endfor %}
     }
+    {% endif %}
+    {% if composer_http_basic and composer_http_basic %},{% endif %}
+    {% if composer_github_oauth %}
+        "github-oauth": {
+            "github.com": "{{ composer_github_oauth }}"
+        }
+    {% endif %}
 }

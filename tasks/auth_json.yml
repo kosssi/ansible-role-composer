@@ -4,4 +4,4 @@
   template:
     src: ".composer/auth.json.j2"
     dest: "{{ composer_home_path|default('~/.composer') }}/auth.json"
-  when: composer_github_oauth != false
+  when: composer_github_oauth != false or composer_http_basic != false
