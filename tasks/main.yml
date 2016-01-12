@@ -3,6 +3,6 @@
 - include: install.yml
 - include: test.yml
 - include: configure.yml
-- include: oauth.yml
+- include: auth_json.yml
 - include: update.yml
   when: composer_update == true
